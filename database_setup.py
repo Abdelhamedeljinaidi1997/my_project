@@ -44,5 +44,5 @@ class Model(Base):
             'price': self.price,
             'cc': self.cc,
         }
-engine = create_engine('sqlite:///carmodels.db')
+engine = create_engine('sqlite:////var/www/FlaskApp/FlaskApp/carmodels.db?check_same_thread=False')
 Base.metadata.create_all(engine)
